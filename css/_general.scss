@@ -1,0 +1,67 @@
+$cor-primaria: #060606;
+$cor-secundaria: #b29600;
+$cor-fundo: #fefefe;
+
+$h-center-block: translateX(-50%);
+$v-center-block: translateY(-50%);
+
+@mixin transform($trans){
+	-webkit-transform: $trans;
+	-o-transform: $trans;
+	-ms-transform: $trans;
+	transform: $trans;
+}
+.h-center-block{
+	position: absolute;	
+	left: 50%;
+	top: 50%;
+	@include transform($h-center-block);
+}
+.v-center-block{
+	position: absolute;	
+	left: 50%;
+	top: 50%;
+	@include transform($v-center-block);
+}
+.hv-center-block{
+	position: absolute;	
+	left: 50%;
+	top: 50%;
+	@include transform($h-center-block +" "+ $v-center-block);
+}
+
+body{
+	background:  $cor-primaria;
+	text-align: center;
+	font-family: "Montserrat",sans-serif;
+}
+h1{
+	color: $cor-secundaria;
+	font-weight: bold;
+	font-size: 50px;
+	opacity: 0;
+	animation: appear;
+	animation-duration: 3s;
+	animation-fill-mode: forwards;
+}
+p{
+	color: $cor-fundo;
+	animation: appear;
+	animation-duration: 3s;
+	animation-delay: .5s;
+	opacity: 0;
+	animation-fill-mode: forwards;
+}
+div{
+	
+	
+}
+
+@keyframes appear{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}

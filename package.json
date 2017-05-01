@@ -1,0 +1,14 @@
+{
+  "name": "gabrieltaves",
+  "version": "0.1.0",
+  "title": "Gabriel Taves - Portfólio",
+  "homepage": "http://gabrieltaves.github.io",
+  "main": "index.html",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^2.3.0",
+    "grunt-contrib-watch": "^1.0.0"
+  }
+}
